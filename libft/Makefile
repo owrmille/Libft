@@ -40,10 +40,12 @@ FILES = ft_isalpha \
 		ft_print_s \
 		ft_print_u \
 		ft_print_x \
-		ft_printf
+		ft_printf \
+		get_next_line \
+		get_next_line_utils
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-INCLS = libft.h ft_printf.h
+INCLS = libft.h ft_printf.h get_next_line.h
 HEADERS = $(INCLS)
 CFILES = $(addsuffix .c, $(FILES))
 OFILES = $(addsuffix .o, $(FILES))
