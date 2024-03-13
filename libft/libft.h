@@ -6,7 +6,7 @@
 /*   By: iatopchu <iatopchu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 14:00:28 by iatopchu          #+#    #+#             */
-/*   Updated: 2024/01/29 22:53:25 by iatopchu         ###   ########.fr       */
+/*   Updated: 2024/03/13 11:56:55 by iatopchu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "./ft_printf.h"
+# include "./get_next_line.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

@@ -1,4 +1,4 @@
-# include "libft/ft_printf.h"
+// # include "libft/ft_printf.h"
 # include "libft/libft.h"
 # include <stdio.h>
 
@@ -114,40 +114,40 @@ int test_all()
 	return (ft_printf(content, str, character, digit));
 }
 
-int test_c_error()
-{
-	char	*content = "My grade is %c|";
-	char *value = "OOPS";
+// int test_c_error()
+// {
+// 	char	*content = "My grade is %c|";
+// 	char *value = "OOPS";
 
-	printf("\nOriginal result:\n");
-	printf("\nLNumber of printed characters: %d\n", printf(content, value));
-	printf("\nMy result:\n");
-	return (ft_printf(content, value));
-}
+// 	printf("\nOriginal result:\n");
+// 	printf("\nLNumber of printed characters: %d\n", printf(content, value));
+// 	printf("\nMy result:\n");
+// 	return (ft_printf(content, value));
+// }
 
-int test_zero()
-{
-	printf("\nOriginal result:\n");
-	printf("\nNumber of printed characters: %d\n", printf(0));
-	printf("\nMy result:\n");
-	return (ft_printf(0));
-}
+// int test_zero()
+// {
+// 	printf("\nOriginal result:\n");
+// 	printf("\nNumber of printed characters: %d\n", printf(0));
+// 	printf("\nMy result:\n");
+// 	return (ft_printf(0));
+// }
 
-int test_empty_string()
-{
-	printf("\nOriginal result:\n");
-	printf("\nNumber of printed characters: %d\n", printf(""));
-	printf("\nMy result:\n");
-	return (ft_printf(""));
-}
+// int test_empty_string()
+// {
+// 	printf("\nOriginal result:\n");
+// 	printf("\nNumber of printed characters: %d\n", printf(""));
+// 	printf("\nMy result:\n");
+// 	return (ft_printf(""));
+// }
 
-int test_null()
-{
-	printf("\nOriginal result:\n");
-	printf("\nNumber of printed characters: %d\n", printf(NULL));
-	printf("\nMy result:\n");
-	return (ft_printf(NULL));
-}
+// int test_null()
+// {
+// 	printf("\nOriginal result:\n");
+// 	printf("\nNumber of printed characters: %d\n", printf(NULL));
+// 	printf("\nMy result:\n");
+// 	return (ft_printf(NULL));
+// }
 
 int	test_hexadec_nbr()
 {
@@ -173,7 +173,7 @@ int	main(void)
 	%: percent sign (%)
 	0: special cases (edge cases; below)
 	*/
-	char option = 'p';
+	char option = 'c';
 
 	/*
 	for special cases:
@@ -183,7 +183,7 @@ int	main(void)
 	'A': test all three cases
 	'-': none
 	*/
-	int special_case = '-';
+	// int special_case = '-';
 
 	/*
 	for hex_flg:
@@ -205,32 +205,32 @@ int	main(void)
 	'2': ft_printf("")
 	'3': ft_printf(NULL)
 */
-	if (special_case == '1')
-	{
-		printf("\n-----ft_printf(0)-----\n");
-		printf("\nNumber of printed characters: %d\n", test_zero());
-	}
-	else if (special_case == '2')
-	{
-		printf("\n-----ft_printf(\"\")-----\n");
-		printf("\nNumber of printed characters: %d\n", test_empty_string());
-	}
-	else if (special_case == '3')
-	{
-		printf("\n-----ft_printf(NULL)-----\n");
-		printf("\nNumber of printed characters: %d\n", test_null());
-	}
-	else if (special_case == 'A')
-	{
-		printf("\n-----ft_printf(0)-----\n");
-		printf("\nNumber of printed characters: %d\n", test_zero());
+	// if (special_case == '1')
+	// {
+	// 	printf("\n-----ft_printf(0)-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_zero());
+	// }
+	// else if (special_case == '2')
+	// {
+	// 	printf("\n-----ft_printf(\"\")-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_empty_string());
+	// }
+	// else if (special_case == '3')
+	// {
+	// 	printf("\n-----ft_printf(NULL)-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_null());
+	// }
+	// else if (special_case == 'A')
+	// {
+	// 	printf("\n-----ft_printf(0)-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_zero());
 
-		printf("\n-----ft_printf(\"\")-----\n");
-		printf("\nNumber of printed characters: %d\n", test_empty_string());
+	// 	printf("\n-----ft_printf(\"\")-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_empty_string());
 
-		printf("\n-----ft_printf(NULL)-----\n");
-		printf("\nNumber of printed characters: %d\n", test_null());
-	}
+	// 	printf("\n-----ft_printf(NULL)-----\n");
+	// 	printf("\nNumber of printed characters: %d\n", test_null());
+	// }
 
 
 
