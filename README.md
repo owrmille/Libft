@@ -25,7 +25,7 @@ My very first own library, which mimics the behaviour of a set of functions from
 • strdup    
 It includes two bigger projects:  
 • get_next_line function, which let read the text file pointed to by the file descriptor, one line at a time  
-• ft_printf function, which is my implementation of the printf() function from libc  
+• ft_printf function, which is my small implementation of the printf() function from libc  
 And some additional functions:  
 • ft_substr   
 • ft_strjoin   
