@@ -41,8 +41,7 @@ FILES = ft_isalpha \
 		ft_print_u \
 		ft_print_x \
 		ft_printf \
-		get_next_line \
-		get_next_line_utils
+		get_next_line
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 INCLS = libft.h ft_printf.h get_next_line.h
